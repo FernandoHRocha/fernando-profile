@@ -1,0 +1,21 @@
+<form class="shadow-bl" [formGroup]="groupForm" action="https://formspree.io/f/xrgjoway" method="POST" >
+  <h3 class="title">Fale comigo</h3>
+  <mat-form-field>
+    <mat-label>Email para contato</mat-label>
+    <input matInput type="email" formControlName="email">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Nome</mat-label>
+    <input matInput formControlName="nome">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Assunto</mat-label>
+    <textarea matInput formControlName="assunto"></textarea>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Mensagem</mat-label>
+    <textarea matInput formControlName="mensagem"></textarea>
+  </mat-form-field>
+  <!-- your other form fields go here -->
+  <button type="submit" class="shadow-br" [disabled]="groupForm.status == 'INVALID'">Enviar Mensagem</button>
+</form>
