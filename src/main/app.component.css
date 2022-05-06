@@ -1,0 +1,6 @@
+main {
+    width: 100%;
+    background-image: radial-gradient(farthest-corner at calc(100% - 75%) calc(10%), #4e4f55 0%, #1b1c21 80%);
+    background-position: center;
+    background-attachment: fixed;
+}

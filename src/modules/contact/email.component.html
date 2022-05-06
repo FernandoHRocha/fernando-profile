@@ -1,21 +1,42 @@
-<form class="shadow-bl" [formGroup]="groupForm" action="https://formspree.io/f/xrgjoway" method="POST" >
-  <h3 class="title">Fale comigo</h3>
-  <mat-form-field>
-    <mat-label>Email para contato</mat-label>
-    <input matInput type="email" formControlName="email">
-  </mat-form-field>
-  <mat-form-field>
-    <mat-label>Nome</mat-label>
-    <input matInput formControlName="nome">
-  </mat-form-field>
-  <mat-form-field>
-    <mat-label>Assunto</mat-label>
-    <textarea matInput formControlName="assunto"></textarea>
-  </mat-form-field>
-  <mat-form-field>
-    <mat-label>Mensagem</mat-label>
-    <textarea matInput formControlName="mensagem"></textarea>
-  </mat-form-field>
-  <!-- your other form fields go here -->
-  <button type="submit" class="shadow-br" [disabled]="groupForm.status == 'INVALID'">Enviar Mensagem</button>
-</form>
+<section>
+  <article>
+    <div>
+      <h3>Contato</h3>
+      <span>
+        Sou uma pessoa aberta a novos relacionamentos e oportunidades, será um prazer encontrar o seu contato em minha caixa de entrada.
+      </span>
+    </div>
+    <div>
+      <h4>Endereço</h4>
+      <span>Guarapuava - Paraná - BR</span>
+    </div>
+    <div>
+      <h4>Telefone</h4>
+      <span>(42) 99126 - 2851</span>
+    </div>
+    <div>
+      <h4>E-mail</h4>
+      <span>fhrlobacz@gmail.com</span>
+    </div>
+  </article>
+  <form class="shadow-bl" [formGroup]="groupForm" action="https://formspree.io/f/xrgjoway" method="POST" >
+    <h3>Fale comigo</h3>
+    <mat-form-field>
+      <mat-label>Email para contato</mat-label>
+      <input matInput type="email" formControlName="email">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Nome</mat-label>
+      <input matInput formControlName="nome">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Assunto</mat-label>
+      <textarea matInput formControlName="assunto"></textarea>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Mensagem</mat-label>
+      <textarea matInput formControlName="mensagem"></textarea>
+    </mat-form-field>
+    <button type="submit" class="shadow-br" [disabled]="groupForm.status == 'INVALID'">Enviar Mensagem</button>
+  </form>
+</section>

@@ -7,18 +7,10 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
   styleUrls: ['./email.component.css']
 })
 export class EmailComponent {
-  title = 'fernando-profile';
-
   groupForm = new FormGroup({
     email     : new FormControl('', [Validators.required]),
     nome      : new FormControl('', [Validators.required]),
     assunto   : new FormControl('', [Validators.required]),
     mensagem  : new FormControl('', [Validators.required])
   });
-
-  test() {
-    console.log(this.groupForm);
-    console.log(this.groupForm.pristine);
-    console.log(this.groupForm.dirty);
-  }
 }
