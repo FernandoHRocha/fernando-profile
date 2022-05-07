@@ -1,7 +1,6 @@
 section {
-    padding: 10px 50px;
-    width: calc(100% - 100px);
-    position: fixed;
+    padding: 10px;
+    width: calc(100% - 10px);
     display: flex;
     justify-content: space-between;
     align-items:center;
@@ -18,4 +17,14 @@ section {
 #nandorocha :last-child {
     font-weight: 900;
     letter-spacing: 0.06rem;
+}
+
+nav {
+    font-weight: 200;
+    display: flex;
+    gap: 20px;
+}
+
+a {
+    text-decoration: none;
 }

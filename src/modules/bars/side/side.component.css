@@ -1,6 +1,4 @@
 section {
-    padding: 10px 50px;
-    width: calc(100% - 100px);
     position: fixed;
     display: flex;
     bottom: 50px;

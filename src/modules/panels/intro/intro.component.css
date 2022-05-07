@@ -3,10 +3,40 @@ section {
     padding: 50px;
 }
 section article {
+    display: flex;
+    flex-direction: column;
     width: 50%;
 }
 
 section img {
     max-width: 90%;
     clip-path: circle(50% at 50% 50%);
+    filter: saturate(0.4);
+}
+
+#background > span {
+    text-align: center;
+    font-size: 8vw;
+    display: block;
+}
+
+#background :first-child {
+    font-weight: 100;
+}
+
+#background :last-child {
+    font-weight: 900;
+    letter-spacing: 0.25rem;
+}
+
+#info {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+#info h4 {
+    font-weight: 300;
+    display: block;
+    margin: auto 0;
 }

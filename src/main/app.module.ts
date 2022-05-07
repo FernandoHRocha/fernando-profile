@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { EmailComponent } from 'src/modules/contact/email.component';
+import { ContactComponent } from 'src/modules/panels/contact/contact.component';
 import { HeaderComponent } from 'src/modules/bars/header/header.component';
 import { SideComponent } from 'src/modules/bars/side/side.component';
 import { IntroComponent } from 'src/modules/panels/intro/intro.component';
@@ -20,7 +20,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     HeaderComponent,
     SideComponent,
     IntroComponent,
-    EmailComponent
+    ContactComponent
   ],
   imports: [
     BrowserModule,

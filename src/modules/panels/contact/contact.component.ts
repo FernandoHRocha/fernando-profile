@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
-  selector: 'email-app',
-  templateUrl: './email.component.html',
-  styleUrls: ['./email.component.css']
+  selector: 'contact-app',
+  templateUrl: './contact.component.html',
+  styleUrls: ['./contact.component.css']
 })
-export class EmailComponent {
+export class ContactComponent {
   groupForm = new FormGroup({
     email     : new FormControl('', [Validators.required]),
     nome      : new FormControl('', [Validators.required]),

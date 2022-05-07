@@ -12,6 +12,8 @@ h4 {
 section {
     display: flex;
     padding: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 article {
@@ -20,6 +22,7 @@ article {
     justify-content: space-between;
     text-align: center;
     padding: 20px 50px;
+    max-width: 400px;
 }
 
 article span {
