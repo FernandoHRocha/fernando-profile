@@ -1,0 +1,90 @@
+section {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+article {
+    padding: 10px;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: inset 0 0 10px #0c0d0e;
+}
+
+article:hover {
+    box-shadow: 0 0 10px #0c0d0e;
+}
+
+.title {
+    display: flex;
+}
+
+.date {
+    border-radius: 2px;
+    position: relative;
+    left: -20px;
+    height: fit-content;
+    background-color: red;
+    padding: 5px;
+    padding-left: 10px;
+}
+
+.date span {
+    display: block;
+    text-transform: uppercase;
+}
+
+.name {
+    margin: auto 0;
+    text-transform: uppercase;
+}
+
+.name h4{
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.complexity {
+    text-align: center;
+    margin: 10px;
+}
+
+.complexity span {
+    font-weight: 100;
+    letter-spacing: 0.3rem;
+}
+
+.stars {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.fa {
+    color: black;
+}
+
+.checked {
+    color: yellow;
+    text-shadow: white 0 0 10px;
+}
+
+.description {
+    padding: 0 10px;
+    font-weight: 300;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.actions a{
+    display: block;
+}

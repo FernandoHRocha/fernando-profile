@@ -1,0 +1,40 @@
+<section>
+    <article *ngFor="let project of projects;">
+        <div>
+            <div class="title">
+                <div class="date">
+                    <span>
+                        {{project.datemonth}}
+                    </span>
+                    <span>
+                        {{project.dateyear}}
+                    </span>
+                </div>
+                <div class="name">
+                    <h4>
+                        {{project.title}}
+                    </h4>
+                </div>
+            </div>
+            <div class="complexity">
+                <div class="stars">
+                    <i class="fa fa-star" [ngClass]="project.complexity < 1 ? '' : 'checked' "></i>
+                    <i class="fa fa-star" [ngClass]="project.complexity < 2 ? '' : 'checked' "></i>
+                    <i class="fa fa-star" [ngClass]="project.complexity < 3 ? '' : 'checked' "></i>
+                    <i class="fa fa-star" [ngClass]="project.complexity < 4 ? '' : 'checked' "></i>
+                    <i class="fa fa-star" [ngClass]="project.complexity < 5 ? '' : 'checked' "></i>
+                </div>
+                <span>Complexidade</span>
+            </div>
+            <div class="description">
+                <span>
+                    {{project.description}}
+                </span>
+            </div>
+        </div>
+        <div class="actions">
+            <a *ngIf="project.link" [href]="project.link" target="_blank">Conferir Online</a>
+            <a *ngIf="project.github" [href]="project.github" target="_blank">Acessar Projeto</a>
+        </div>
+    </article>
+</section>
