@@ -1,0 +1,52 @@
+<main>
+    <div class="contact">
+        <div class="name">
+            <h1>{{FIRST_NAME}}</h1>
+            <h1>{{LAST_NAME}}</h1>
+            <h2>{{CARRER}}</h2>
+        </div>
+        <div class="contact-card">
+            <h3>CONTATO</h3>
+            <p>{{CONTACT_PHONE}}</p>
+            <p>{{CONTACT_EMAIL}}</p>
+            <p>{{PERSONAL_SITE}}</p>
+        </div>
+    </div>
+    <div class="description">
+        <div class="about">
+            <h3>Sobre Mim</h3>
+            <p>{{SHORT_ABOUT}}</p>
+        </div>
+        <div class="education">
+            <h3>Formação</h3>
+            <div *ngFor="let educationItem of EDUCATION">
+                <h4>{{educationItem.institution}}</h4>
+                <span>{{educationItem.year}} | {{educationItem.description}}</span>
+            </div>
+        </div>
+        <div class="experience">
+            <h3>Experiência</h3>
+            <div *ngFor="let experienceItem of PROFESSIONAL_EXPERIENCE">
+                <h4>{{experienceItem.year}} - {{experienceItem.role}}</h4>
+                <div>
+                    <ul>
+                        <li *ngFor="let descriptionItem of experienceItem.description">
+                            <p>{{descriptionItem}}</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="skills">
+            <h3>Habilidades</h3>
+            <ul>
+                <li *ngFor="let skillItem of SKILLS">
+                    <h5>{{skillItem.skill}}</h5>
+                    <div class="bar-graph">
+                        <div class="bar-fill" [style]="'width:'+ skillItem.level + '%'"></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</main>

@@ -13,7 +13,7 @@ export class ProjectComponent {
       description : 'Página de consulta a preços de automóveis das categorias Carro, Moto e Caminhão segundo a FIPE.',
       datemonth   : 'mai',
       dateyear    : '2021',
-      complexity  : 2,
+      complexity  : 1,
       link        : 'http://fipe.nandorocha.com.br/',
       github      : 'https://github.com/FernandoHRocha/javascript_fipe'
     },

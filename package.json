@@ -2,6 +2,7 @@
   "name": "fernando-profile",
   "version": "0.0.0",
   "scripts": {
+    "deploy": "ng deploy --cname=www.nandorocha.com.br",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",

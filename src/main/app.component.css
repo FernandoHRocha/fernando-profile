@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 #background {
     width: 100%;
     background-image: radial-gradient(farthest-corner at calc(100% - 75%) calc(10%), #4e4f55 0%, #1b1c21 80%);
@@ -14,7 +19,6 @@ header {
 }
 
 main {
-    width: 100%;
     max-width: calc(1200px - 32px);
     margin: 0 auto;
     padding-left: 32px;
@@ -24,4 +28,18 @@ nav {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.print {
+    display: none;
+}
+
+@media print {
+    .print {
+        display: block;
+    }
+
+    .no-print {
+        display: none;
+    }
 }

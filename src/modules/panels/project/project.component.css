@@ -1,6 +1,7 @@
 section {
     padding: 20px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
 }
@@ -77,6 +78,7 @@ article:hover {
 .description {
     padding: 0 10px;
     font-weight: 300;
+    text-align: justify;
 }
 
 .actions {

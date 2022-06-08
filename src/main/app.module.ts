@@ -6,6 +6,7 @@ import { HeaderComponent } from 'src/modules/bars/header/header.component';
 import { SideComponent } from 'src/modules/bars/side/side.component';
 import { IntroComponent } from 'src/modules/panels/intro/intro.component';
 import { ProjectComponent } from 'src/modules/panels/project/project.component';
+import { CurriculumComponent } from 'src/modules/print/curriculum.component';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -22,7 +23,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     SideComponent,
     ProjectComponent,
     IntroComponent,
-    ContactComponent
+    ContactComponent,
+    CurriculumComponent
   ],
   imports: [
     BrowserModule,

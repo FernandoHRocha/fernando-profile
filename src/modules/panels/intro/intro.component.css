@@ -1,11 +1,13 @@
 section {
-    display: flex;
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: 50% 50%;
     padding: 50px;
 }
-section article {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
+
+#intro-titulo {
+    display: grid;
+    grid-template-rows: 49% 1fr 49%;
 }
 
 section img {
@@ -14,29 +16,40 @@ section img {
     filter: saturate(0.4);
 }
 
-#background > span {
+#intro-titulo h1 {
+    font-weight: 100;
     text-align: center;
-    font-size: 8vw;
+    font-size: clamp(95%, calc(12.5vw - 141%), 791%);
     display: block;
 }
 
-#background :first-child {
-    font-weight: 100;
+#intro-titulo > hr {
+    height: 4px;
+    margin: auto 0;
+    background-color: white;
 }
 
-#background :last-child {
+#intro-titulo strong {
     font-weight: 900;
-    letter-spacing: 0.25rem;
+    letter-spacing: 0.15rem;
 }
 
 #info {
     display: flex;
-    justify-content: center;
     height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #info h4 {
     font-weight: 300;
     display: block;
-    margin: auto 0;
+    margin-top: 2mm;
+}
+
+@media (min-width: 1200px) {
+    #intro-titulo h1 {
+        font-size: 800%;
+    }
 }
