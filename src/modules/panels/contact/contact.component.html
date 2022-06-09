@@ -21,7 +21,7 @@
       <span>fhrlobacz@gmail.com</span>
     </div>
   </article>
-  <form class="shadow-bl" [formGroup]="groupForm" action="https://formspree.io/f/xrgjoway" method="POST" >
+  <form class="shadow-bl" [formGroup]="groupForm">
     <h3>Fale comigo</h3>
     <mat-form-field>
       <mat-label>Email para contato</mat-label>
@@ -29,16 +29,22 @@
     </mat-form-field>
     <mat-form-field>
       <mat-label>Nome</mat-label>
-      <input matInput formControlName="nome">
+      <input matInput formControlName="name">
     </mat-form-field>
     <mat-form-field>
       <mat-label>Assunto</mat-label>
-      <textarea matInput formControlName="assunto"></textarea>
+      <textarea matInput formControlName="_subject"></textarea>
     </mat-form-field>
     <mat-form-field>
       <mat-label>Mensagem</mat-label>
-      <textarea matInput formControlName="mensagem"></textarea>
+      <textarea matInput formControlName="message"></textarea>
     </mat-form-field>
-    <button type="submit" class="shadow-br" [disabled]="groupForm.status == 'INVALID'">Enviar Mensagem</button>
+    <button
+    class="shadow-br {{groupForm.status == 'INVALID' ? '' : 'pointer'}}"
+    [disabled]="groupForm.status == 'INVALID'"
+    (click)="onSubmit()"
+    [title]="groupForm.status == 'INVALID' ? 'Preencha os campos acima' : 'Enviar e-mail'">
+      Enviar Mensagem
+    </button>
   </form>
 </section>

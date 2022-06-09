@@ -1,21 +1,21 @@
 export class BaseComponent {
 
-    FIRST_NAME: string = `Fernando`;
-    LAST_NAME: string = 'Rocha';
-    CONTACT_EMAIL: string = 'fhrlobacz@gmail.com';
-    CONTACT_PHONE: string = '(42) 99126-2851';
-    PERSONAL_SITE: string = 'www.nandorocha.com.br';
-    COMPLETE_ABOUT: string = `Um apaixonado por tecnologias, durante o ensino médio foram dados 
-                    os primeiros passos em liguagem C# para o desenvolvimento de jogos e logo em seguida 
-                    demonstrando interesse em arduino e automações. Os primeiros projetos aplicados foram 
-                    de automação web e jogos educativos, ambos aplicados na carreira de professor de física 
-                    do ensino médio. `;
-    SHORT_ABOUT: string = `Um apaixonado por tecnologias que teve o início de sua carreira como desenvolvedor 
-                            independente, enquanto estudava por vontade própria. Extremamente motivado, 
-                            ao desenvolver processos de automação web surpreendeu com resultados e conseguiu 
-                            sua primeira vaga na area como desenvolvedor web. Desde então seu foco é se desenvolver 
-                            profissionalmente.`;
-    EDUCATION = [
+    public static FIRST_NAME: string = `Fernando`;
+    public static LAST_NAME: string = 'Rocha';
+    public static CONTACT_EMAIL: string = 'fhrlobacz@gmail.com';
+    public static CONTACT_PHONE: string = '(42) 99126-2851';
+    public static PERSONAL_SITE: string = 'www.nandorocha.com.br';
+    public static COMPLETE_ABOUT: string = `Um apaixonado por tecnologias, durante o ensino médio foram dados 
+        os primeiros passos em liguagem C# para o desenvolvimento de jogos e logo em seguida 
+        demonstrando interesse em arduino e automações. Os primeiros projetos aplicados foram 
+        de automação web e jogos educativos, ambos aplicados na carreira de professor de física 
+        do ensino médio. `;
+    public static SHORT_ABOUT: string = `Um apaixonado por tecnologias que teve o início de sua carreira como desenvolvedor 
+        independente, enquanto estudava por vontade própria. Extremamente motivado, 
+        ao desenvolver processos de automação web surpreendeu com resultados e conseguiu 
+        sua primeira vaga na area como desenvolvedor web. Desde então seu foco é se desenvolver 
+        profissionalmente.`;
+    public static EDUCATION = [
         {
             year : '2009 - 2011',
             institution: 'Ana Vanda Bassara',
@@ -27,8 +27,8 @@ export class BaseComponent {
             description: 'Licenciatura em Física'
         }
     ]
-    CARRER: string = 'Desenvolvedor Web';
-    PROFESSIONAL_EXPERIENCE = [
+    public static CARRER: string = 'Desenvolvedor Web';
+    public static PROFESSIONAL_EXPERIENCE = [
         {
             year : '03/2021',
             role: 'Analista de Licitação',
@@ -49,7 +49,7 @@ export class BaseComponent {
             ]
         }
     ];
-    SKILLS = [
+    public static SKILLS = [
         {
             skill : "javascript",
             level : "85",
@@ -74,9 +74,15 @@ export class BaseComponent {
             skill : "docker",
             level : "65",
         }
-    ]
+    ];
+
+    public static EMAIL_URL: string = "https://formspree.io/f/xrgjoway";
 
     public print() {
+        const notificationDiv = document.querySelector('#notification');
+        if(notificationDiv) {
+            notificationDiv.classList.remove('active');
+        }
         window.print();
     }
 }
