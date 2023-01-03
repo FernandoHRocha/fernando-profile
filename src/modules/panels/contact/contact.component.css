@@ -29,6 +29,10 @@ article span {
     font-weight: 300;
 }
 
+article a {
+    text-decoration: none;
+}
+
 article h3 {
     margin-bottom: 20px;
 }

@@ -2,65 +2,60 @@ export class BaseComponent {
 
     public static FIRST_NAME: string = `Fernando`;
     public static LAST_NAME: string = 'Rocha';
-    public static CONTACT_EMAIL: string = 'fhrlobacz@gmail.com';
-    public static CONTACT_PHONE: string = '(42) 99126-2851';
+    public static CONTACT_EMAIL: string = 'contato@nandorocha.com.br';
+    public static CONTACT_PHONE: string = '(42) 99144-6487';
     public static PERSONAL_SITE: string = 'www.nandorocha.com.br';
-    public static COMPLETE_ABOUT: string = `Um apaixonado por tecnologias, durante o ensino médio foram dados 
-        os primeiros passos em liguagem C# para o desenvolvimento de jogos e logo em seguida 
-        demonstrando interesse em arduino e automações. Os primeiros projetos aplicados foram 
-        de automação web e jogos educativos, ambos aplicados na carreira de professor de física 
-        do ensino médio. `;
-    public static SHORT_ABOUT: string = `Um apaixonado por tecnologias que teve o início de sua carreira como desenvolvedor 
-        independente, enquanto estudava por vontade própria. Extremamente motivado, 
-        ao desenvolver processos de automação web surpreendeu com resultados e conseguiu 
-        sua primeira vaga na area como desenvolvedor web. Desde então seu foco é se desenvolver 
-        profissionalmente.`;
+    public static COMPLETE_ABOUT: string = `Responsável e organizado, trabalho de maneira a estar sempre atento as
+         melhores práticas de desenvolvimento de software do mercado, e comprometido a desenvolver softwares juntamente
+         a minha equipe buscando sempre melhorar e entregar os melhores resultados. Atualmente busco crescer profissionalmente.`;
+    public static SHORT_ABOUT: string = `Responsável, organizado e comprometido a desenvolver softwares em equipe, buscando sempre
+         evoluir e entregar os melhores resultados.`;
     public static EDUCATION = [
         {
-            year : '2009 - 2011',
-            institution: 'Ana Vanda Bassara',
-            description: 'Ensino Médio'
-        },
-        {
-            year : '2012 - 2022',
+            year : 'Graduando',
             institution: 'Universidade Estadual do Centro Oeste',
             description: 'Licenciatura em Física'
         }
     ]
-    public static CARRER: string = 'Desenvolvedor Web';
+    public static CARRER: string = 'Dev Fullstack';
     public static PROFESSIONAL_EXPERIENCE = [
         {
-            year : '03/2021',
-            role: 'Analista de Licitação',
+            year : '08/2022',
+            role: 'Desenvolvedor Fullstack - Mobile Sales',
             description: [
-                'Análise de processos licitatórios para participação da empresa.',
-                'Submissão, acompanhamento e gestão dos processos licitatórios.',
-                'Elaboração de documentos.',
-                'Desenvolvimento de automações e ERP para gestão dos processos da empresa.'
+                'Participação ativa com a equipe, mentoreando e auxiliando o crescimento dos membros além de colaborar na organização e cultura de desenvolvimento da equipe.',
+                'Implementação de integrações com gateway de pagamento.',
             ]
         },
         {
-            year : '10/2021',
-            role: 'Desenvolvedor Web',
+            year : '10/2021 - 08/2022',
+            role: 'Desenvolvedor Web - Shooting House',
             description: [
-                'Desenvolvimento de Bug Fix e novas Features em projetos Web que atendem milhares de pessoas pelo Brasil.',
-                'Participação nos processos do time através da metodologia Scrum.',
-                'Atuação como desenvolvedor Backend em servidor e banco de dados, Frontend atencioso ao UI e UX dos clientes.'
+                'Atuação Backend e Frontend em projetos Web com milhares de usuários seguindo a metodologia Scrum.',
+                'Desenvolvedor crítico aos padrões dos projetos e atento a aspectos de UI e UX, atuando na montagem, apresentação e impressão de relatórios dentro do sistema.'
+            ]
+        },
+        {
+            year : '03/2021 - 10/2021',
+            role: 'Analista de Licitação - Brain Pro',
+            description: [
+                'Submissão e gestão dos processos licitatórios da empresa.',
+                'Implementação e desenvolvimento de processos de automação web, banco de dados e ERP para gestão dos processos da empresa.'
             ]
         }
     ];
     public static SKILLS = [
         {
-            skill : "javascript",
+            skill : "sql",
+            level : "90",
+        },
+        {
+            skill : "typescript",
             level : "85",
         },
         {
             skill : "html css",
             level : "80",
-        },
-        {
-            skill : "sql",
-            level : "75",
         },
         {
             skill : "laravel",

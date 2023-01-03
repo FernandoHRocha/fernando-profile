@@ -9,8 +9,9 @@ h2 {
 }
 h3 {
     font-size: 1.6rem;
-    margin-bottom: 5mm;
+    margin-bottom: 3mm;
     letter-spacing: 0.3rem;
+    text-align: right;
 }
 h4 {
     font-size: 1.2rem;
@@ -22,7 +23,7 @@ main {
     width: 210mm;
     height: 297mm;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 2fr 6fr;
     print-color-adjust: exact !important;
 }
 
@@ -47,12 +48,6 @@ main .contact {
     text-align: end;
 }
 
-.contact .contact-card {
-    font-size: 1.3rem;
-    font-weight: 300;
-    line-height: 30px;
-}
-
 /* ^^ COLUNA ESQUERDA ^^ */
 /* vv COLUNA DIREITA vv */
 
@@ -61,6 +56,7 @@ main .description * {
 }
 
 main .description {
+    line-height: 1.3rem;
     height: 100%;
     width: 100%;
     padding: 22mm 10mm;
@@ -78,7 +74,7 @@ main .description {
 }
 
 .description > div {
-    margin-bottom: 10mm;
+    margin-bottom: 3mm;
 }
 .description > div:last-child {
     margin-bottom: 0;
@@ -89,12 +85,12 @@ main .description {
     text-align: justify;
 }
 
-.description .about p {
-    line-height: 1.3rem;
-}
-
 .description .education div:not(:last-child), .description .experience div:not(:last-child) {
     margin-bottom: 3mm;
+}
+
+.description .experience ul {
+    padding: 0;
 }
 
 .description .skills ul {
@@ -122,6 +118,30 @@ main .description {
     height: 100%;
     background-color: black;
     border-radius: 10px;
+}
+
+.description .contact-card {
+    font-size: 1.3rem;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+.contact-card .contact-links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-card .contact-links > a {
+    text-decoration: none;
+}
+
+.contact-card .site-url {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: 0.3rem;
+    font-weight: 400;
+    font-size: 1.5rem;
 }
 
 /* ^^ COLUNA DIREITA ^^ */

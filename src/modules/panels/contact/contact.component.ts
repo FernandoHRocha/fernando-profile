@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { EmailService } from 'src/services/email.service';
+import { BaseComponent } from 'src/modules/base.component';
 
 @Component({
   selector: 'contact-app',
@@ -15,6 +16,8 @@ export class ContactComponent {
     _subject  : new FormControl('', [Validators.required]),
     message   : new FormControl('', [Validators.required])
   });
+  CONTACT_EMAIL = BaseComponent.CONTACT_EMAIL;
+  CONTACT_PHONE = BaseComponent.CONTACT_PHONE;
 
   constructor(private emailService: EmailService) {
   }
