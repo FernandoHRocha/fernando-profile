@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { UntypedFormControl, UntypedFormGroup, Validators } from '@angular/forms';
 import { EmailService } from 'src/services/email.service';
 import { BaseComponent } from 'src/modules/base.component';
 
@@ -10,11 +10,11 @@ import { BaseComponent } from 'src/modules/base.component';
 })
 export class ContactComponent {
 
-  groupForm = new FormGroup({
-    email     : new FormControl('', [Validators.required]),
-    name      : new FormControl('', [Validators.required]),
-    _subject  : new FormControl('', [Validators.required]),
-    message   : new FormControl('', [Validators.required])
+  groupForm = new UntypedFormGroup({
+    email     : new UntypedFormControl('', [Validators.required]),
+    name      : new UntypedFormControl('', [Validators.required]),
+    _subject  : new UntypedFormControl('', [Validators.required]),
+    message   : new UntypedFormControl('', [Validators.required])
   });
   CONTACT_EMAIL = BaseComponent.CONTACT_EMAIL;
   CONTACT_PHONE = BaseComponent.CONTACT_PHONE;
