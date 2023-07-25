@@ -1,0 +1,55 @@
+<main>
+    <div class="contact">
+        <div class="name">
+            <h1>{{FIRST_NAME}}</h1>
+            <h1>{{LAST_NAME}}</h1>
+            <h2>{{CARRER}}</h2>
+        </div>
+    </div>
+    <div class="description">
+        <div class="about">
+            <h3>Sobre Mim</h3>
+            <p>{{COMPLETE_ABOUT}}</p>
+        </div>
+        <div class="education">
+            <h3>Formação</h3>
+            <div *ngFor="let educationItem of EDUCATION">
+                <h4>{{educationItem.institution}}</h4>
+                <span>{{educationItem.year}} | {{educationItem.description}}</span>
+            </div>
+        </div>
+        <div class="experience">
+            <h3>Experiência</h3>
+            <div *ngFor="let experienceItem of PROFESSIONAL_EXPERIENCE">
+                <h4>{{experienceItem.role}}</h4>
+                <span>{{experienceItem.year}}</span>
+                <div>
+                    <ul>
+                        <li *ngFor="let descriptionItem of experienceItem.description">
+                            <p>{{descriptionItem}}</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="skills">
+            <h3>Habilidades</h3>
+            <ul>
+                <li *ngFor="let skillItem of SKILLS">
+                    <h5>{{skillItem.skill}}</h5>
+                    <div class="bar-graph">
+                        <div class="bar-fill" [style]="'width:'+ skillItem.level + '%'"></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="contact-card">
+            <h3>CONTATO</h3>
+            <div class="contact-links">
+                <a target="_blank" href="https://whatsa.me/5542991446487/?t=Ol%C3%A1%20Nando,%20encontrei%20seu%20curr%C3%ADculo%20interessante%20e%20gostaria%20de%20conversar%20contigo.">{{CONTACT_PHONE}}</a>
+                <a target="_blank" href="mailto:{{CONTACT_EMAIL}}">{{CONTACT_EMAIL}}</a>
+            </div>
+            <a target="_blank" href="https://www.nandorocha.com.br" class="site-url">{{PERSONAL_SITE}}</a>
+        </div>
+    </div>
+</main>

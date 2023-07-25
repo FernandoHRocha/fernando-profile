@@ -1,0 +1,159 @@
+h1 {
+    font-size: 3rem;
+    letter-spacing: 0.7rem;
+}
+h2 {
+    margin: 0 20px 0 0;
+    font-weight: 300;
+    letter-spacing: 0.5rem;
+}
+h3 {
+    font-size: 1.6rem;
+    margin-bottom: 3mm;
+    letter-spacing: 0.3rem;
+    text-align: right;
+}
+h4 {
+    font-size: 1.2rem;
+}
+
+* {
+    color: white;
+}
+
+.experience h4 {
+    font-weight: 500;
+}
+
+main {
+    margin: 0;
+    padding: 0;
+    width: 210mm;
+    height: 297mm;
+    display: grid;
+    grid-template-columns: 2fr 6fr;
+    print-color-adjust: exact !important;
+}
+
+/* vv COLUNA ESQUERDA vv */
+
+main .contact {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
+    padding: 22mm 0;
+    box-sizing: border-box;
+}
+
+.contact .name {
+    text-transform: uppercase;
+    transform: rotate(180deg);
+    writing-mode: tb;
+    text-align: end;
+}
+
+/* ^^ COLUNA ESQUERDA ^^ */
+/* vv COLUNA DIREITA vv */
+
+main .about p {
+    line-height: 1.5rem;
+}
+
+main .description * {
+    color: black;
+}
+
+main .description {
+    line-height: 1.3rem;
+    height: 100%;
+    width: 100%;
+    padding: 22mm 10mm;
+    box-sizing: border-box;
+    display: flex;
+    background-color: #fff;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.description h3 {
+    margin-bottom: 3mm;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+.description > div {
+    margin-bottom: 3mm;
+}
+.description > div:last-child {
+    margin-bottom: 0;
+}
+
+.description p {
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+.description .education div:not(:last-child), .description .experience div:not(:last-child) {
+    margin-bottom: 3mm;
+}
+
+.description .experience ul {
+    padding: 0;
+}
+
+.description .skills ul {
+    list-style: none;
+    padding-inline-start: 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.description .skills li {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    margin-bottom: 1mm;
+    align-items:center;
+}
+
+.description .skills .bar-graph {
+    flex: 1;
+    border: solid 1px black;
+    height: 4mm;
+    border-radius: 10px;
+}
+
+.description .skills .bar-fill {
+    height: 100%;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.description .contact-card {
+    font-size: 1.3rem;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+.contact-card .contact-links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-card .contact-links > a {
+    text-decoration: none;
+}
+
+.contact-card .site-url {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: 0.3rem;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+/* ^^ COLUNA DIREITA ^^ */

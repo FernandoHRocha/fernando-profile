@@ -1,0 +1,34 @@
+section {
+    padding: 10px 0;
+    width: calc(100% - 10px);
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+#nandorocha > span {
+    display: block;
+}
+
+#nandorocha :first-child {
+    font-weight: 300;
+}
+
+#nandorocha :last-child {
+    font-weight: 900;
+    letter-spacing: 0.06rem;
+}
+
+nav {
+    font-weight: 200;
+    display: flex;
+    gap: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#headbar {
+    display: none;
+}

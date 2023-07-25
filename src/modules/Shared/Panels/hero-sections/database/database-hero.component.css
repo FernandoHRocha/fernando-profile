@@ -1,0 +1,16 @@
+* {
+    --database-deg : -4deg;
+}
+
+section.hero {
+    padding: calc((50% - 80px)* sin(var(--database-deg)*-1)) 0;
+}
+
+section.hero::after {
+    transform: skewY(var(--database-deg));
+    background-image: linear-gradient(45deg, transparent, var(--color-purple-20), transparent);
+}
+
+section.hero .hero-image img {
+    background-image: linear-gradient(black, black), radial-gradient(circle at top right, var(--color-green), var(--color-orange));
+}
