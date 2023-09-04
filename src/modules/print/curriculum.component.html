@@ -9,7 +9,7 @@
     <div class="description">
         <div class="about">
             <h3>Sobre Mim</h3>
-            <p>{{SHORT_ABOUT}}</p>
+            <p>{{COMPLETE_ABOUT}}</p>
         </div>
         <div class="education">
             <h3>Formação</h3>
@@ -33,15 +33,19 @@
             </div>
         </div>
         <div class="skills">
-            <h3>Habilidades</h3>
-            <ul>
+            <h3>Habilidades técnicas</h3>
+            <span *ngFor="let skill of SKILLS; let last = last">
+                <span>{{skill}}</span>
+                <span *ngIf="!last">, </span>
+            </span>
+            <!-- <ul>
                 <li *ngFor="let skillItem of SKILLS">
                     <h5>{{skillItem.skill}}</h5>
                     <div class="bar-graph">
                         <div class="bar-fill" [style]="'width:'+ skillItem.level + '%'"></div>
                     </div>
                 </li>
-            </ul>
+            </ul> -->
         </div>
         <div class="contact-card">
             <h3>CONTATO</h3>
